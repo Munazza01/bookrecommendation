@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="description" content="Recommend a Read - We provide recommendations for book you would love to read!">
+        
+        <meta name="robots" content="index, follow" />
+
+		<title>Rate Book - Recommend a Read</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="../css/rate_book_style.css">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    </head>
+
+<!--Body Tag Starts-->
+<body>
+    
+    <!--Container Div starts-->
+    <div class="container">
+        
+        <!--Header Tag starts-->
+        <header>
+
+            <!--Logo Tag Starts-->
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="Recommend a Read - Logo">
+                </a>
+            </div>
+            <!--Logo Tag Ends-->
+
+            <!--Nav Tag Starts-->
+            <nav>
+                <ul>
+                    <li class="nav-button nav-bt-2"><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+            <!--Nav Tag Ends-->
+
+        </header>
+        <!--Header Tag Ends-->
+
+
+        <div class="dashboard-container">
+
+            <div class="sidebar-wrapper">
+
+                <div class="sidebar">
+                    <nav>
+                        <ul>
+
+                            <li><a href="dashboard.html"><i class="fa fa-home"></i> Dashboard</a></li>
+                            <li><a href="add_book.html"><i class="fa fa-plus"></i> Add Book</a></li>
+                            <li class="active"><a href="rate_book.html"><i class="fa fa-star-half-o"></i> Rate Book</a></li>
+                            <li><a href="about.html"><i class="fa fa-info-circle"></i> About</a></li>
+                            
+
+
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+
+            <div class="book-rating-wrapper">
+
+               
+
+                <div class="book-rating">
+
+                    <form action="search_book" method="post">
+                        
+                        <input type="text" name="search_book" id="search_book" placeholder="Enter Book Name to search">
+                        <input type="submit" value="Search">
+                    
+                    </form>
+
+                    <img src="../images/table-bg.png" alt="bg-table">
+
+
+                </div>
+
+
+                <div class="book-wrapper">
+                    <h2>Your Search Results...</h2>
+                    <!--Books starts-->
+                    <div class="books book-1">
+                        
+                        <div class="book-thumb">
+                            <img src="../images/book-thumbs/1984.png" alt="1984">
+                        </div>
+
+                        <div class="book-description">
+                            <div class="title">
+                                <h2>1984</h2>
+                            </div>
+
+                            <div class="author">
+                                <h3>George Orwell</h3>
+                            </div>
+
+                            <div class="summary">
+                                <p>
+                                    Among the seminal texts of the 20th century, Nineteen Eighty-Four is a rare work that grows 
+                                    more haunting as its futuristic purgatory becomes more real. Published in 1949, 
+                                    the book offers political satirist George Orwell's nightmarish vision of a totalitarian, 
+                                    bureaucratic world and one poor stiff's attempt to find individuality. The brilliance of the novel is Orwell's prescience of modern life the 
+                                    ubiquity of television, the distortion of the language and his ability to construct such a thorough version of hell. Required reading for students since it was published, 
+                                    it ranks among the most terrifying novels ever written.
+                                </p>
+                            </div>
+
+                            <div class="tags">
+                                <ul>
+                                    <li><a href="#">Romance</a></li>
+                                    <li><a href="#">Popular</a></li>
+                                    <li><a href="#">Funny</a></li>
+                                    <li><a href="#">Political-Satire</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="rating">
+
+                                <form action="/action_page.php">
+                                    
+                                    <label for="rating">Rate this Book:
+                                    <select name="rating" id="rating">
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                      <option value="6">6</option>
+                                      <option value="7">7</option>
+                                      <option value="8">8</option>
+                                      <option value="9">9</option>
+                                      <option value="10">10</option>                                      
+                                    </select>
+                                    </label>
+                                    
+                                    <input type="submit" value="Submit">
+                                  </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+              
+
+    
+                   
+                
+
+
+
+            </div>
+            
+        
+
+        </div>
+
+        
+       
+
+    </div>
+    <!--Container Div ends-->
+
+
+    <!--Footer Starts-->
+    <footer>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="signup.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <p>
+            &copy; Recommend a Read | 2022
+        </p>
+    </footer>
+    <!--Footer Ends-->
+</body>
+
+<!--Body Tag Ends-->
+
+
+</html>
